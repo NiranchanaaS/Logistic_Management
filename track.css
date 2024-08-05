@@ -1,0 +1,48 @@
+.track-shipment-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://images.ctfassets.net/grb5fvwhwnyo/5qdng82bOC9cvCh8fvhP5v/c7b0ddc45e27e433ba62e1b792d87d99/card-driverless-trucks-in-logistics.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .track-shipment-section {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .track-shipment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .track-shipment-form label {
+    font-weight: bold;
+  }
+  
+  .track-shipment-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .track-shipment-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .track-shipment-form button:hover {
+    background-color: #444;
+  }
+  

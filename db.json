@@ -1,0 +1,82 @@
+{
+  "users": [
+    {
+      "username": "Niranchanaa",
+      "password": "abc",
+      "companyName": "Sri Krishna College of engineering and technology",
+      "firstName": "NIRANCHANAA",
+      "lastName": "S",
+      "email": "727722euai043@skcet.ac.in",
+      "selectedTransportModes": [
+        "FTL"
+      ],
+      "userType": "importer",
+      "id": 1
+    },
+    {
+      "username": "Niranchanaa",
+      "password": "abc",
+      "companyName": "Sri Krishna College of engineering and technology",
+      "firstName": "NIRANCHANAA",
+      "lastName": "S",
+      "email": "727722euai043@skcet.ac.in",
+      "selectedTransportModes": [
+        "AIR"
+      ],
+      "userType": "exporter",
+      "id": 2
+    },
+    {
+      "username": "Niranchanaa",
+      "password": "abc",
+      "companyName": "Sri Krishna College of engineering and technology",
+      "firstName": "NIRANCHANAA",
+      "lastName": "S",
+      "email": "727722euai043@skcet.ac.in",
+      "selectedTransportModes": [
+        "FTL"
+      ],
+      "userType": "transportProvider",
+      "id": 3
+    },
+    {
+      "username": "Niranchanaa",
+      "password": "abc",
+      "companyName": "Sri Krishna College of engineering and technology",
+      "firstName": "NIRANCHANAA",
+      "lastName": "S",
+      "email": "727722euai043@skcet.ac.in",
+      "selectedTransportModes": [
+        "FTL"
+      ],
+      "userType": "exporter",
+      "id": 4
+    },
+    {
+      "username": "DHARSHINI KR",
+      "password": "Dharsh@123",
+      "companyName": "DharshiniEnterprises",
+      "firstName": "DHARSHINI",
+      "lastName": "K R",
+      "email": "22ai043@skcet.ac.in",
+      "selectedTransportModes": [
+        "AIR"
+      ],
+      "userType": "importer",
+      "id": 5
+    },
+    {
+      "username": "DHARSHINI KR",
+      "password": "abc",
+      "companyName": "DharshiniEnterprises",
+      "firstName": "DHARSHINI",
+      "lastName": "K R",
+      "email": "22ai043@skcet.ac.in",
+      "selectedTransportModes": [
+        "FTL"
+      ],
+      "userType": "transportProvider",
+      "id": 6
+    }
+  ]
+}
