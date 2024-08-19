@@ -1,0 +1,118 @@
+/* Basic reset and styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.transport-page {
+    /* background-image: url('https://images.unsplash.com/photo-1506748686214e9df14f55f5f0009f31e99c8c60ad9d'); Example background image */
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.transport-header {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.transport-main-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.transport-intro {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid rgba(225, 225, 225, 0.5);
+    border-radius: 4px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.transport-list {
+    margin-top: 20px;
+}
+
+.transport-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.transport-list th, .transport-list td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid rgba(225, 225, 225, 0.1);
+}
+
+.transport-list th {
+    background-color: #f4f4f4;
+}
+
+.transport-list tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.transport-list button {
+    background-color: hsl(211, 100%, 50%);
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.transport-list button:hover {
+    background-color: #0056b3;
+}
+
+.transport-form {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly less transparent white background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Set a maximum width */
+    margin: 0 auto; /* Center the section */
+}
+
+.transport-form label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.transport-form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid rgba(225, 225, 225, 0.5);
+    border-radius: 4px;
+    width: 100%;
+}
+
+.transport-form button {
+    background-color: hsl(211, 100%, 50%);
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.transport-form button:hover {
+    background-color: #0056b3;
+}

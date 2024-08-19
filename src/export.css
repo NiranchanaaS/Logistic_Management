@@ -1,0 +1,119 @@
+/* Basic reset and styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.export-page {
+    /* background-image: url('https://images.unsplash.com/photo-1506748686214e9df14f6b39ddc3a6f4bfa0a0d5198c1a'); Example background image */
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.export-header {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.export-main-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.export-intro,
+.export-request-form,
+.export-request-section {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly less transparent white background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 600px; /* Set a maximum width */
+    margin: 0 auto; /* Center the section */
+}
+
+.export-request-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.export-request-form label {
+    margin-bottom: 5px;
+}
+
+.export-request-form input, 
+.export-request-form textarea, 
+.export-request-form select {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid rgba(225, 225, 225, 0.5);
+    border-radius: 40px;
+}
+
+.export-request-form button {
+    background-color: hsl(211, 100%, 50%);
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.export-request-form button:hover {
+    background-color: #0056b3;
+}
+
+.export-request-section {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly less transparent white background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 600px; /* Set a maximum width */
+    margin: 0 auto; /* Center the section */
+}
+
+.export-request-section h2 {
+    margin-top: 0;
+}
+
+.export-request-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.export-request-section li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid rgba(225, 225, 225, 0.5);
+    border-radius: 4px;
+    background-color: rgba(240, 240, 240, 0.9); /* Slightly different background for list items */
+}
+
+.export-dummy-data {
+    background-color: rgba(225, 225, 225, 0.5); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 600px; /* Set a maximum width */
+    margin: 0 auto; /* Center the section */
+}
+
+.export-dummy-data ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.export-dummy-data li {
+    margin-bottom: 10px;
+}

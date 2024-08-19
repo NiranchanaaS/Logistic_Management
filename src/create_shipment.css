@@ -1,0 +1,172 @@
+.shipment-container {
+    display: flex;
+    height: 100vh; /* Full height of the viewport */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px #1190a1;
+}
+
+.shipment-left-section,
+.shipment-right-section {
+    flex: 1; /* Equally divide the space between left and right sections */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent background */
+}
+
+.shipment-left-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px 0 0 5px; /* Optional: rounded corners on the left section */
+    background-color: transparent; /* Ensure the image container is also transparent */
+}
+
+.shipment-right-section {
+    padding: 20px;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden; /* Disable scrolling */
+    max-height: 100vh; /* Prevent the section from exceeding viewport height */
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent background */
+}
+
+.form-section {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateX(100%);
+    visibility: hidden;
+    background-color: transparent; /* Ensure each form section is transparent */
+}
+
+.form-section.active {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+}
+
+.form-content {
+    padding-bottom: 60px; /* Space for navigation buttons and some margin */
+}
+
+.form-content h3 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #1190a1;
+}
+
+.form-content input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #1190a1;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent input background */
+    color: #1190a1; /* Set input text color */
+    box-sizing: border-box;
+}
+
+.dimensions {
+    display: flex;
+    gap: 10px;
+}
+
+.dimensions input {
+    width: calc(33.33% - 10px);
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.next-button,
+.back-button,
+.save-button {
+    padding: 10px 20px;
+    background-color: #1190a1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.next-button:hover,
+.back-button:hover,
+.save-button:hover {
+    background-color: #0e7c8f; /* Darker shade of teal for hover effect */
+}
+
+.back-button {
+    background-color: #1190a1;
+}
+
+.back-button:hover {
+    background-color: #0e7c8f; /* Darker shade of teal for hover effect */
+}
+/* Popup Container */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Make sure it appears on top of other elements */
+}
+
+/* Popup Content Box */
+.popup-content {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Popup Header */
+.popup-content h2 {
+    margin: 0;
+    margin-bottom: 15px;
+    color: #1190a1; /* Primary color for header */
+}
+
+/* Popup Message */
+.popup-content p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333333; /* Darker color for text */
+}
+
+/* Close Button */
+.close-button {
+    background-color: #1190a1; /* Button background color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effect for Close Button */
+.close-button:hover {
+    background-color: #0e7481; /* Darker shade for hover effect */
+}

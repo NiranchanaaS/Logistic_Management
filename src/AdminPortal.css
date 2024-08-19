@@ -1,0 +1,185 @@
+.admin-portal-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+    background-color: #f4f4f4;
+    background-image: url('https://img.freepik.com/free-photo/top-view-truck-boxes_23-2149853130.jpg?semt=ais_hybrid'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire element */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    position: relative;
+}
+
+.admin-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    flex-shrink: 0;
+}
+
+.nav-left h1 {
+    margin: 0;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.logout-button {
+    background-color: #ff4d4d;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    background-color: #e60000;
+}
+
+.admin-layout {
+    display: flex;
+    flex: 1;
+}
+
+.admin-sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 50px); /* Adjust based on the height of the navbar */
+    overflow-y: auto;
+    flex-shrink: 0;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar-nav a:hover {
+    background-color: #1190a1;
+}
+
+.sidebar-nav .active {
+    background-color: #1190a1;
+}
+
+.admin-main-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #f4f4f4;
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+.large-logo {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.admin-content {
+    padding: 20px;
+    background-color: #fff;
+    flex: 1;
+}
+.manage-users {
+    margin: 20px;
+  }
+  
+  .manage-users table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .manage-users table th, .manage-users table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .manage-users table th {
+    background-color: #f2f2f2;
+  }
+  
+  .manage-users .edit-user, .user-shipments {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+  }
+  
+  .manage-users .edit-user h3, .user-shipments h3 {
+    margin-top: 0;
+  }
+  
+  .manage-users .edit-user label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .manage-users .edit-user input {
+    margin: 5px 0;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .manage-users .edit-user button, .user-shipments button {
+    margin-top: 10px;
+  }
+  
+  .manage-users .user-name-link {
+    cursor: pointer;
+    color: #1190a1;
+    text-decoration: underline;
+  }
+  
+  .manage-users .user-name-link:hover {
+    color: #0d7a87;
+  }
+  
+  .manage-users .delete {
+    color: red;
+  }
+  
+  .error-message {
+    color: red;
+    margin-bottom: 20px;
+  }
+  

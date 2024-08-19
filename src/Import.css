@@ -1,0 +1,118 @@
+/* Basic reset and styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.import-page {
+    /* background-image: url('https://images.ctfassets.net/grb5fvwhwnyo/5qdng82bOC9cvCh8fvhP5v/c7b0ddc45e27e433ba62e1b792d87d99/card-driverless-trucks-in-logistics.jpg'); Example background image */
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.import-header {
+    background-color: rgba(16, 1, 1, 0.5); /* Semi-transparent background */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.import-main-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.import-intro,
+.import-request-form,
+.import-request-section {
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 600px; /* Set a maximum width */
+    margin: 0 auto; /* Center the section */
+}
+
+.import-request-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.import-request-form label {
+    margin-bottom: 5px;
+}
+
+.import-request-form input, 
+.import-request-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid rgba(225, 225, 225, 0.5);
+    border-radius: 40px;
+}
+
+.import-request-form button {
+    background-color: hsl(211, 100%, 50%);
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.import-request-form button:hover {
+    background-color: #0056b3;
+}
+
+.import-request-section {
+    background-color:  rgba(225, 225, 225, 0.5); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 600px; /* Set a maximum width */
+    margin: 0 auto; /* Center the section */
+}
+
+.import-request-section h2 {
+    margin-top: 0;
+}
+
+.import-request-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.import-request-section li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid rgba(225, 225, 225, 0.5);
+    border-radius: 4px;
+    background-color: rgba(240, 240, 240, 0.5); /* Slightly different background for list items */
+}
+
+.import-dummy-data {
+    background-color: rgba(225, 225, 225, 0.5); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 600px; /* Set a maximum width */
+    margin: 0 auto; /* Center the section */
+}
+
+.import-dummy-data ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.import-dummy-data li {
+    margin-bottom: 10px;
+}

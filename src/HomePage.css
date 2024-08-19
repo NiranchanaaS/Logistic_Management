@@ -1,0 +1,462 @@
+/* Basic reset and styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home-body {
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+}
+
+.top-image {
+    height: 0; /* No top image */
+    width: 100%;
+}
+
+.home-header {
+    background-color: #1197a0; /* Transparent background */
+    color: #0b0600;
+    padding: 10px 20px; /* Adjust padding for reduced height */
+    display: flex;
+    justify-content: space-between; /* Distribute space between nav and quote */
+    align-items: center;
+    position: relative; /* Ensure position for dropdown */
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    height: 85px; /* Optional: Adds a subtle border */
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-button {
+    background-color: transparent; /* Remove background color */
+    color: #f7f7f7; /* Set text color */
+    border: none; /* Remove border */
+    padding: 8px 16px; /* Adjust padding as needed */
+    cursor: pointer;
+    border-radius: 0; /* Remove border radius for a flat look */
+    font-size: 14px; /* Adjust font size */
+    text-transform: uppercase; /* Capitalize text if needed */
+    transition: color 0.3s, background-color 0.3s; /* Smooth transition for color changes */
+}
+
+.nav-button:hover {
+    color: #fff; /* Text color on hover */
+    background-color: rgba(0, 0, 0, 0.2); /* Subtle background on hover */
+}
+
+.profile-section .nav-button {
+    background-color: transparent; /* Ensure profile buttons also have no background */
+    color: #fff; /* Set text color */
+}
+
+.admin-login-button {
+    background-color: transparent; /* Ensure admin login button has no background */
+    color: #fff; /* Set text color */
+}
+
+.admin-login-button:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Subtle background on hover */
+}
+
+.dropdown-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Positioned below the menu icon */
+    right: 0; /* Aligns with the right edge of the menu icon */
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: max-content; /* Adjust width dynamically */
+    min-width: 150px; /* Ensure it has a minimum width */
+}
+
+.dropdown-menu button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.dropdown-menu button:hover {
+    background-color: #444;
+}
+
+.dropdown-menu.open {
+    display: flex;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Define keyframe animations for sliding in */
+@keyframes slideInFromSide {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.intro-section,
+.carriers-section {
+    animation: slideIn 0.5s ease-out forwards;
+}
+
+.intro-section {
+    animation: slideInFromSide 0.5s ease-out forwards;
+    animation-delay: 0.5s; /* Staggered start for intro-section */
+}
+
+
+
+.track-shipment-section {
+    animation-delay: 1.5s;
+}
+
+.intro-section {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Distribute space between image and content */
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(225, 225, 225, 0); /* Semi-transparent background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro-image {
+    flex: 1; /* Take up 50% of the width */
+    max-width: 50%; /* Ensure it doesn’t overflow */
+    padding-right: 20px; /* Space between image and content */
+}
+
+.intro-image img {
+    width: 100%; /* Make image responsive */
+    height: auto;
+    border-radius: 8px;
+}
+
+.custom-text {
+    font-family: 'Georgia', serif; /* Change to your preferred font family */
+    font-size: 2em; /* Adjust the font size as needed */
+    font-weight: bold; /* Ensures the text is bold */
+    color: #333; /* Change the text color if needed */
+    text-align: center; /* Center-aligns the text */
+    margin: 20px 0; /* Adds vertical margin */
+}
+
+.intro-content {
+    flex: 1; /* Take up 50% of the width */
+    max-width: 50%; /* Ensure it doesn’t overflow */
+    padding-left: 20px; /* Space between image and content */
+}
+
+.intro-text {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.navigation-section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.nav-box {
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+    color: #000;
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.nav-box:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Fully opaque on hover */
+}
+
+.footer-bar {
+    background-color: #0a0a0a;
+    color: #faefef;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #ffefef;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #090909; /* Adjust color as needed */
+}
+
+.profile-section span {
+    font-size: 14px; /* Adjust font size */
+}
+
+.profile-section .nav-button {
+    background-color: transparent; /* Ensure profile buttons also have no background */
+    color: #fff; /* Set text color */
+}
+
+.admin-login-button {
+    background-color: transparent; /* Ensure admin login button has no background */
+    color: #fff; /* Set text color */
+}
+
+.admin-login-button:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Subtle background on hover */
+}
+
+.logo {
+    height: 40px; /* Adjust the size of the logo as needed */
+    width: auto;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Adds space between the buttons */
+}
+.learn-more-button {
+    background-color:#1197a0; /* Green background color */
+    border: none; /* Remove border */
+    color: white; /* Text color */
+    padding: 14px 20px; /* Padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Inline-block display */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margin */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+  }
+  
+  .learn-more-button:hover {
+    background-color: #1197a0; /* Slightly darker green on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+  }
+  
+  .learn-more-button:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.5); /* Custom focus outline */
+  }
+  .track-order-button {
+    background-color:#1197a0; /* Green background color */
+    border: none; /* Remove border */
+    color: white; /* Text color */
+    padding: 14px 20px; /* Padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Inline-block display */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margin */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+  }
+  .track-order-button:hover {
+    background-color: #1197a0; /* Slightly darker green on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+  }
+  
+  .track-order-button:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.5); /* Custom focus outline */
+  }
+  .stats-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0); /* Transparent background */
+}
+
+.stats-item {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.stats-icon {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    border-radius: 50%; /* Make the image round */
+    margin-right: 10px;
+}
+
+.stats-text {
+    font-size: 1.5em;
+    color: #333; /* Adjust text color as needed */
+}
+.carriers-section {
+    /* margin:  0; Adds margin to the top and bottom */
+    padding: 40px; /* Adds padding inside the section */
+    /* background: rgba(255, 255, 255, 0);  */
+    border: 1px solid #ddd; /* Border to define the section box */
+    /* border-radius: 8px; */
+    background-color: #f9f9f9;/* Transparent background */
+    text-align: center;
+    /* box-shadow: #000; */
+    background-color: rgba(225, 225, 225, 0); /* Semi-transparent background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.country-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Space between buttons and line */
+}
+
+.country-button {
+    background-color: #1197a0; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 20px; /* Curved buttons */
+    padding: 10px 20px;
+    margin: 0 10px; /* Space between buttons */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.country-button:hover {
+    background-color: #0a7a8c; /* Darker button color on hover */
+}
+
+.line {
+    height: 2px;
+    background-color: #ccc;
+    margin: 20px 0; /* Space above and below the line */
+}
+
+.carriers-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.carrier-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px; /* Space around each carrier item */
+    width: 150px; /* Set a fixed width */
+}
+
+.carrier-logo {
+    width: 100px; /* Set a fixed size for carrier logos */
+    height: auto;
+    margin-bottom: 10px; /* Space between logo and name */
+}
+.required-feature-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .required-feature-item {
+    width: 22%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .required-feature-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .required-feature-item p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .required-feature-item button {
+    background-color: #1197a0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .required-feature-item button:hover {
+    background-color:#1197a0;
+  }
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Increase spacing between items in each section */
+}
+  
+  
+  

@@ -1,0 +1,87 @@
+/* Container for the Admin Login Form */
+.admin-login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+}
+
+/* Heading */
+.admin-login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form Styling */
+.admin-login-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Form Inputs and Labels */
+.admin-login-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.admin-login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.admin-login-form input:focus {
+    border-color: #1190a1;
+    outline: none;
+}
+
+/* Submit Button */
+.login-button {
+    background-color: #1190a1;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.login-button:hover {
+    background-color: #107a8b;
+}
+
+/* Register Link Container */
+.register-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Register Button */
+.register-button {
+    background-color: #1190a1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.register-button:hover {
+    background-color: #1190a1;
+}
+
+.register-link p {
+    margin-bottom: 10px;
+    color: #333;
+}
